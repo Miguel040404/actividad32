@@ -20,11 +20,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen flex`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen flex leading-4`}>
         <aside className="w-[300px]">
           <MenuPrincipal />
         </aside>
-        <main className="h-full grow">
+        <main className="h-full grow" overflow="auto">
           {children}
         </main>
       </body>
